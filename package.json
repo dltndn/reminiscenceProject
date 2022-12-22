@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dltndn/reminiscenceProject/issues"
   },
-  "homepage": "https://github.com/dltndn/reminiscenceProject#readme"
+  "homepage": "https://github.com/dltndn/reminiscenceProject#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
