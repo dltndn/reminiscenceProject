@@ -2,7 +2,7 @@
   "name": "couple",
   "version": "1.0.0",
   "description": "커플 다이어리 프로젝트",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/dltndn/reminiscenceProject.git"
   },
-  "author": "",
+  "author": "suhyeon&haein",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dltndn/reminiscenceProject/issues"
