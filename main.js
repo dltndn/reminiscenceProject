@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
 const testJs = require('./test')
+const mapPage = require('./pages/mapPage')
 
 const port = 3200;
 
@@ -25,8 +26,8 @@ app.get("/calendar", function (req, res) {
   res.send(testJs.calendarHtml)
 })
 
-app.get("/hi", function (req, res) {
-  res.send(testJs.hi)
+app.get("/map", function (req, res) {
+  res.send(mapPage.mapPage())
 })
 
 app.listen(port, () => {

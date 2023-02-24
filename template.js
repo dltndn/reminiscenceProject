@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 exports.HTML = (title, header, body) => {
     return `
@@ -8,16 +9,13 @@ exports.HTML = (title, header, body) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${title}</title>
-        <link rel="icon" href="./images/icon.jpg">
-        <script>
-        </script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NAVER_CLIENT_ID}"></script>
         </head>
       
       <body>
         <header>
           ${header}
         </header>
-        <link rel="stylesheet" type="text/css" href="./main.css">
         <main>
           ${body}
         </main>
