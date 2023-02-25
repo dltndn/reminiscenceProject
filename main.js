@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const testJs = require('./test')
 const mapPage = require('./pages/mapPage')
+const searchPage = require('./pages/searchPage')
 
 const port = 3200;
 
@@ -30,6 +31,9 @@ app.get("/map", function (req, res) {
   res.send(mapPage.mapPage())
 })
 
+app.get("/search", function (req, res) {
+  searchPage.getPointXY(req, res)
+})
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
 });
